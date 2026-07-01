@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TalentLane — UK Global Talent Visa: Design Industry Pathway Guide</title>
+<meta name="description" content="The complete interactive guide to the UK Global Talent Visa Design Industry Pathway — live from 1 July 2026. Eligibility, evidence, costs, timelines, and a dedicated chapter for Nigerian and African applicants.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D9488'/%3E%3Cpath d='M25 70 L50 30 L75 70' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M35 56 L65 56' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Azeret+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ash-00:#FAFAF8; --ash-01:#F1F0EC; --ash-02:#E7E5DF; --ash-03:#D6D3C9;
+  --ink-primary:#16161A; --ink-secondary:#5C5C66; --ink-tertiary:#9A9AA2;
+  --accent:#0D9488; --accent-light:#14B8A6; --accent-ink:#042F2E;
+  --accent-dim:color-mix(in srgb,var(--accent) 10%,transparent);
+  --accent-border:color-mix(in srgb,var(--accent) 30%,transparent);
+  --warn:#B45309; --warn-bg:color-mix(in srgb,#B45309 8%,transparent);
+  --good:#047857; --good-bg:color-mix(in srgb,#047857 8%,transparent);
+  --flag:#1D4ED8; --flag-bg:color-mix(in srgb,#1D4ED8 8%,transparent);
+  --font-display:'General Sans',sans-serif;
+  --font-body:'Figtree',sans-serif;
+  --font-accent:'Azeret Mono',monospace;
+  --text-hero:clamp(44px,7vw,90px);
+  --text-h1:clamp(30px,4.2vw,56px);
+  --text-h2:clamp(22px,3vw,34px);
+  --nav-h:68px;
+  --pad:clamp(64px,8vw,120px);
+  --wrap:1160px;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;animation:none!important;}}
+body{margin:0;background:var(--ash-00);color:var(--ink-primary);font-family:var(--font-body);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,5vw,48px);}
+.eyebrow{font-family:var(--font-accent);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-tertiary);}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0;letter-spacing:-0.02em;color:var(--ink-primary);}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+
+/* NAV */
+header.nav{position:sticky;top:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,48px);background:color-mix(in srgb,var(--ash-00) 80%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--ash-03);}
+.nav__mark{font-family:var(--font-display);font-weight:700;font-size:19px;letter-spacing:-0.03em;text-decoration:none;display:flex;align-items:center;gap:8px;}
+.nav__mark .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;}
+.nav__links{display:flex;align-items:center;gap:24px;list-style:none;margin:0;padding:0;}
+.nav__links a{font-family:var(--font-accent);font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink-secondary);}
+.nav__links a:hover{color:var(--ink-primary);}
+.nav__cta{font-family:var(--font-accent);font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--ink-primary);padding:9px 16px;border-radius:7px;}
+.nav__cta:hover{background:var(--accent-ink);}
+@media(max-width:760px){.nav__links{display:none;}}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:7px;cursor:pointer;border:none;font-family:var(--font-accent);font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;padding:13px 26px;border-radius:8px;transition:opacity .2s,transform .15s,background .2s;}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary:hover{opacity:.9;}
+.btn-dark{background:var(--ink-primary);color:#fff;}
+.btn-dark:hover{opacity:.88;}
+.btn-ghost{background:transparent;color:var(--ink-primary);border:1px solid var(--ash-03);padding:12px 24px;}
+.btn-ghost:hover{border-color:var(--ink-primary);}
+.btn-sm{padding:8px 14px;font-size:10px;border-radius:6px;}
+.btn-icon{background:var(--ash-01);color:var(--ink-secondary);border:1px solid var(--ash-03);}
+.btn-icon:hover{color:var(--ink-primary);border-color:var(--accent);}
+
+/* HERO */
+.hero{padding:clamp(56px,9vw,110px) 0 clamp(40px,6vw,72px);background:radial-gradient(ellipse 50% 40% at 90% 5%,color-mix(in srgb,var(--accent) 10%,transparent),transparent 65%),var(--ash-00);}
+.hero__credit{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-accent);font-size:11px;letter-spacing:.04em;color:var(--ink-secondary);background:var(--ash-01);border:1px solid var(--ash-03);padding:7px 14px 7px 7px;border-radius:99px;margin-bottom:22px;}
+.hero__credit .avatar{width:22px;height:22px;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0;}
+.hero__credit a{color:var(--ink-primary);font-weight:500;text-decoration:none;border-bottom:1px solid var(--accent-border);}
+.hero h1{font-size:var(--text-hero);line-height:.98;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero__sub{font-size:clamp(16px,1.8vw,19px);color:var(--ink-secondary);max-width:540px;margin-top:22px;font-weight:300;}
+.hero__ctas{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+.hero__pills{display:flex;gap:10px;margin-top:32px;flex-wrap:wrap;}
+.hero__pill{font-family:var(--font-accent);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:99px;border:1px solid var(--ash-03);background:#fff;}
+.hero__pill.good{color:var(--good);background:var(--good-bg);border-color:color-mix(in srgb,var(--good) 25%,transparent);}
+.hero__pill.warn{color:var(--warn);background:var(--warn-bg);border-color:color-mix(in srgb,var(--warn) 25%,transparent);}
+
+/* VISA CARD */
+.visa-card{background:var(--accent-ink);color:#fff;border-radius:20px;padding:32px 28px;max-width:360px;font-family:var(--font-accent);}
+.visa-card__top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:32px;}
+.visa-card__flag{display:flex;gap:3px;align-items:center;}
+.visa-card__flag span{width:12px;height:20px;border-radius:2px;}
+.visa-card__flag .f1{background:#012169;}
+.visa-card__flag .f2{background:#C8102E;}
+.visa-card__flag .f3{background:#fff;}
+.visa-card__label{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);}
+.visa-card__title{font-family:var(--font-display);font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:6px 0 2px;}
+.visa-card__sub{font-size:11px;color:rgba(255,255,255,.55);}
+.visa-card__rows{display:flex;flex-direction:column;gap:12px;}
+.visa-card__row{display:flex;justify-content:space-between;gap:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);}
+.visa-card__row:first-child{border-top:none;padding-top:0;}
+.visa-card__row-label{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);}
+.visa-card__row-val{font-size:12px;font-weight:500;color:rgba(255,255,255,.9);text-align:right;}
+.visa-card__badge{display:inline-block;background:var(--accent);color:#fff;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-top:18px;}
+
+/* SECTION */
+section{padding:var(--pad) 0;}
+.section-head{max-width:660px;margin-bottom:44px;}
+.section-head h2{font-size:var(--text-h1);margin-top:10px;}
+.section-head p{color:var(--ink-secondary);margin-top:14px;font-weight:300;font-size:16px;}
+.alt-bg{background:var(--ash-01);border-top:1px solid var(--ash-02);border-bottom:1px solid var(--ash-02);}
+.dark-bg{background:var(--ink-primary);color:#fff;}
+.dark-bg h2,.dark-bg h3,.dark-bg h4{color:#fff;}
+.dark-bg .eyebrow{color:var(--accent-light);}
+.dark-bg .section-head p{color:#B9BAC3;}
+
+/* KEY FACTS GRID */
+.key-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;}
+@media(max-width:860px){.key-facts{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.key-facts{grid-template-columns:1fr;}}
+.fact-card{background:#fff;border:1px solid var(--ash-03);border-radius:14px;padding:24px;}
+.fact-card .icon{width:36px;height:36px;border-radius:10px;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--accent);}
+.fact-card h4{font-size:15px;margin-bottom:7px;}
+.fact-card p{font-size:14px;color:var(--ink-secondary);font-weight:300;}
+
+/* TRACK TABS */
+.track-tabs{display:flex;gap:0;background:var(--ash-02);border-radius:12px;padding:5px;}
+.track-tab{flex:1;padding:12px 20px;font-family:var(--font-accent);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:none;background:transparent;border-radius:8px;cursor:pointer;color:var(--ink-secondary);transition:background .2s,color .2s;}
+.track-tab.active{background:#fff;color:var(--ink-primary);box-shadow:0 2px 8px rgba(0,0,0,.08);}
+.track-panel{display:none;}
+.track-panel.active{display:block;}
+.track-compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px;}
+@media(max-width:700px){.track-compare{grid-template-columns:1fr;}}
+.track-card{background:#fff;border:1px solid var(--ash-03);border-radius:16px;padding:28px;}
+.track-card h4{font-size:17px;margin-bottom:18px;}
+.track-row{display:flex;gap:12px;font-size:14px;margin-bottom:12px;}
+.track-row .track-key{font-family:var(--font-accent);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-tertiary);width:110px;flex-shrink:0;padding-top:3px;}
+.track-row .track-val{color:var(--ink-primary);font-weight:400;}
+.track-badge{display:inline-block;font-family:var(--font-accent);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:99px;margin-bottom:20px;}
+.track-badge.talent{background:var(--accent-dim);color:var(--accent);}
+.track-badge.promise{background:color-mix(in srgb,#7C3AED 10%,transparent);color:#7C3AED;}
+
+/* EVIDENCE SECTIONS */
+.evidence-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+@media(max-width:760px){.evidence-grid{grid-template-columns:1fr;}}
+.ev-card{background:#fff;border:1px solid var(--ash-03);border-radius:14px;padding:24px;}
+.ev-card h4{font-family:var(--font-accent);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-tertiary);margin-bottom:16px;}
+.ev-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:14px;color:var(--ink-primary);}
+.ev-item:last-child{margin-bottom:0;}
+.ev-item input{margin-top:3px;width:16px;height:16px;accent-color:var(--accent);flex-shrink:0;}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column;gap:0;}
+.step{display:grid;grid-template-columns:56px 1fr;gap:24px;padding-bottom:36px;position:relative;}
+.step:last-child{padding-bottom:0;}
+.step:last-child .step-line{display:none;}
+.step-num-wrap{display:flex;flex-direction:column;align-items:center;}
+.step-num{width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--font-display);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.step-line{flex:1;width:2px;background:var(--ash-02);margin-top:8px;}
+.step-content{padding-top:10px;}
+.step-content h4{font-size:17px;margin-bottom:8px;}
+.step-content p{font-size:14.5px;color:var(--ink-secondary);font-weight:300;}
+
+/* COST CALCULATOR */
+.calc-shell{background:#fff;border:1px solid var(--ash-03);border-radius:20px;padding:clamp(24px,4vw,40px);}
+.calc-controls{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:30px;}
+@media(max-width:600px){.calc-controls{grid-template-columns:1fr;}}
+.calc-field label{font-family:var(--font-accent);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-tertiary);display:block;margin-bottom:10px;}
+.calc-field select,.calc-field input{width:100%;font-family:var(--font-body);font-size:15px;padding:12px 14px;border-radius:10px;border:1px solid var(--ash-03);background:var(--ash-00);color:var(--ink-primary);}
+.calc-breakdown{border-top:1px solid var(--ash-02);padding-top:28px;}
+.calc-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--ash-01);font-size:14.5px;}
+.calc-row:last-of-type{border-bottom:none;}
+.calc-row .label{color:var(--ink-secondary);font-weight:300;}
+.calc-row .val{font-family:var(--font-accent);font-weight:500;font-size:14px;}
+.calc-total{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:12px;margin-top:20px;}
+.calc-total .label{font-family:var(--font-display);font-size:16px;font-weight:600;}
+.calc-total .val{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--accent);}
+.calc-note{font-size:12.5px;color:var(--ink-tertiary);font-weight:300;margin-top:14px;}
+
+/* TIMELINE */
+.timeline-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+@media(max-width:900px){.timeline-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.timeline-grid{grid-template-columns:1fr;}}
+.tl-card{background:#fff;border:1px solid var(--ash-03);border-radius:14px;padding:22px;}
+.tl-card .tl-phase{font-family:var(--font-accent);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block;}
+.tl-card h4{font-size:15px;margin-bottom:10px;}
+.tl-card ul{list-style:none;margin:0;padding:0;}
+.tl-card li{font-size:13.5px;color:var(--ink-secondary);font-weight:300;padding:5px 0;border-top:1px solid var(--ash-01);}
+.tl-card li:first-child{border-top:none;}
+
+/* REFUSAL REASONS */
+.refusal-list{display:flex;flex-direction:column;gap:12px;}
+.refusal-item{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--ash-03);border-radius:12px;padding:20px;}
+.refusal-item .r-icon{width:32px;height:32px;border-radius:8px;background:var(--warn-bg);color:var(--warn);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-accent);font-weight:500;font-size:14px;}
+.refusal-item .r-text h4{font-size:15px;margin-bottom:5px;}
+.refusal-item .r-text p{font-size:14px;color:var(--ink-secondary);font-weight:300;}
+
+/* CLINIC CARDS */
+.clinic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+@media(max-width:700px){.clinic-grid{grid-template-columns:1fr;}}
+.clinic-card{background:#fff;border:1px solid var(--ash-03);border-radius:12px;padding:20px;}
+.clinic-card .city{font-family:var(--font-accent);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;display:block;}
+.clinic-card h4{font-size:15px;margin-bottom:6px;}
+.clinic-card p{font-size:13.5px;color:var(--ink-secondary);font-weight:300;}
+
+/* AFRICA TIPS */
+.africa-tips{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px;}
+@media(max-width:700px){.africa-tips{grid-template-columns:1fr;}}
+.africa-tip{background:var(--flag-bg);border:1px solid color-mix(in srgb,var(--flag) 20%,transparent);border-radius:12px;padding:20px;}
+.africa-tip h4{font-size:14.5px;color:var(--flag);margin-bottom:7px;}
+.africa-tip p{font-size:13.5px;color:var(--ink-secondary);font-weight:300;line-height:1.6;}
+
+/* FAQ ACCORDION */
+.faq-list{display:flex;flex-direction:column;gap:1px;border:1px solid var(--ash-03);border-radius:14px;overflow:hidden;}
+.faq-item{}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;background:#fff;font-family:var(--font-display);font-size:15px;font-weight:600;border-bottom:1px solid var(--ash-01);}
+.faq-item:last-child .faq-q{border-bottom:none;}
+.faq-item.open .faq-q{border-bottom-color:var(--ash-02);}
+.faq-chev{transition:transform .2s;color:var(--ink-tertiary);flex-shrink:0;}
+.faq-item.open .faq-chev{transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s var(--ease);}
+.faq-item.open .faq-a{max-height:400px;}
+.faq-a-inner{padding:18px 24px;font-size:14.5px;color:var(--ink-secondary);font-weight:300;line-height:1.7;background:var(--ash-00);}
+
+/* CHECKLIST */
+.pre-check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+@media(max-width:760px){.pre-check-grid{grid-template-columns:1fr;}}
+.pre-check-card{background:#fff;border:1px solid var(--ash-03);border-radius:14px;padding:24px;}
+.pre-check-card h4{font-family:var(--font-accent);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-tertiary);margin-bottom:14px;}
+.pre-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:14px;}
+.pre-item:last-child{margin-bottom:0;}
+.pre-item input{margin-top:3px;width:16px;height:16px;accent-color:var(--accent);flex-shrink:0;}
+.pre-item.done label{text-decoration:line-through;color:var(--ink-tertiary);}
+.checklist-meta{display:flex;align-items:center;gap:14px;margin-top:24px;flex-wrap:wrap;}
+.progress-bar-wrap{flex:1;min-width:160px;background:var(--ash-02);border-radius:99px;height:8px;}
+.progress-bar{height:8px;background:var(--accent);border-radius:99px;transition:width .3s var(--ease);}
+.progress-label{font-family:var(--font-accent);font-size:11px;color:var(--ink-tertiary);}
+.reset-btn{font-family:var(--font-accent);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-tertiary);background:none;border:1px solid var(--ash-03);border-radius:6px;padding:6px 12px;cursor:pointer;}
+.reset-btn:hover{color:var(--ink-primary);border-color:var(--ink-primary);}
+
+/* PULL QUOTE */
+.pull-quote{border-left:3px solid var(--accent);padding:18px 22px;font-family:var(--font-display);font-size:clamp(18px,2.2vw,24px);color:var(--ink-primary);font-weight:600;letter-spacing:-0.01em;line-height:1.4;background:var(--accent-dim);border-radius:0 12px 12px 0;margin:32px 0;}
+
+/* FOOTER */
+.footer-cta{background:var(--ink-primary);color:#fff;padding:clamp(64px,9vw,110px) 0 clamp(50px,7vw,80px);}
+.footer-cta__inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;}
+.footer-cta__eyebrow{font-family:var(--font-accent);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-light);}
+.footer-cta__headline{font-family:var(--font-display);font-size:clamp(32px,5.5vw,64px);font-weight:700;letter-spacing:-0.03em;line-height:1.1;max-width:780px;}
+.footer-cta__sub{font-size:15px;color:#B9BAC3;font-weight:300;max-width:520px;}
+.footer-tiers{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;font-family:var(--font-accent);font-size:11px;color:#9596A3;}
+.footer-tiers span{border:1px solid #34343F;border-radius:99px;padding:6px 13px;}
+.footer-credits{background:var(--ink-primary);border-top:1px solid #2A2A33;}
+.footer-credits .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding:46px 0;}
+@media(max-width:760px){.footer-credits .wrap{grid-template-columns:1fr;gap:28px;}}
+.footer-col-label{font-family:var(--font-accent);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#6F707C;margin-bottom:12px;display:block;}
+.footer-credits p{font-size:13.5px;color:#B9BAC3;font-weight:300;line-height:1.7;margin-bottom:8px;}
+.footer-credits a{color:#fff;text-decoration:none;border-bottom:1px solid #4A4A56;}
+.footer-credits a:hover{border-color:var(--accent);color:var(--accent-light);}
+.footer-links{display:flex;flex-direction:column;gap:10px;}
+.footer-links a{font-size:13.5px;color:#D7D7DD;text-decoration:none;}
+.footer-links a:hover{color:var(--accent-light);}
+.footer-bottom{border-top:1px solid #2A2A33;padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom span{font-family:var(--font-accent);font-size:10.5px;color:#6F707C;}
+
+/* TOAST */
+.copy-toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;background:var(--ink-primary);color:#fff;font-family:var(--font-accent);font-size:12px;letter-spacing:.04em;padding:12px 20px;border-radius:99px;transition:opacity .25s,transform .25s;z-index:999;}
+.copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* SCROLL NAV */
+.scroll-nav{position:fixed;right:clamp(16px,3vw,28px);bottom:clamp(16px,3vw,28px);z-index:200;display:flex;flex-direction:column;gap:8px;}
+.scroll-nav button{width:42px;height:42px;border-radius:50%;border:1px solid var(--ash-03);background:#fff;color:var(--ink-secondary);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 10px 24px -10px rgba(20,20,30,.25);opacity:0;transform:translateY(8px) scale(.9);pointer-events:none;transition:opacity .2s var(--ease),transform .2s var(--ease),background .2s,color .2s,border-color .2s;}
+.scroll-nav button.visible{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+.scroll-nav button:hover{background:var(--ink-primary);color:#fff;border-color:var(--ink-primary);}
+.scroll-nav .progress-ring{position:absolute;inset:0;transform:rotate(-90deg);}
+.scroll-nav .progress-ring circle{fill:none;stroke-width:2;}
+.scroll-nav .progress-ring .track{stroke:var(--ash-02);}
+.scroll-nav .progress-ring .fill{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset .1s linear;}
+.scroll-nav button#scrTop{position:relative;}
+@media print{header.nav,.scroll-nav,.footer-cta,.copy-toast{display:none!important;}body{background:#fff;}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__mark" href="#top"><span class="dot"></span>TalentLane.</a>
+  <ul class="nav__links">
+    <li><a href="#what-changed">What Changed</a></li>
+    <li><a href="#tracks">Tracks</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#nigeria">Nigeria/Africa</a></li>
+    <li><a href="#checklist">Checklist</a></li>
+  </ul>
+  <a class="nav__cta" href="#build-cta">Build Like This →</a>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap" style="display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(32px,5vw,64px);align-items:center;">
+    <div>
+      <div class="hero__credit">
+        <span class="avatar"></span>
+        Guide by <a href="https://x.com/halosznn_" target="_blank" rel="noopener">Halo — @halosznn_</a>
+      </div>
+      <h1>Talent<br><em>Lane.</em></h1>
+      <p class="hero__sub">Design just got its own UK visa route. No sponsorship. No job offer. This is the complete interactive guide — eligibility, evidence, costs, and timelines, all in one place.</p>
+      <div class="hero__ctas">
+        <a class="btn btn-dark" href="#tracks">Find My Track</a>
+        <a class="btn btn-ghost" href="#checklist">Pre-App Checklist</a>
+      </div>
+      <div class="hero__pills">
+        <span class="hero__pill good">Live 1 July 2026</span>
+        <span class="hero__pill good">No Sponsor Needed</span>
+        <span class="hero__pill">Settlement in 3–5 Years</span>
+        <span class="hero__pill warn">Not Legal Advice — Always Check GOV.UK</span>
+      </div>
+    </div>
+    <div class="visa-card" aria-hidden="true">
+      <div class="visa-card__top">
+        <div>
+          <div class="visa-card__label">United Kingdom</div>
+          <div class="visa-card__title">Global Talent</div>
+          <div class="visa-card__sub">Design Industry Pathway</div>
+        </div>
+        <div class="visa-card__flag">
+          <span class="f1"></span><span class="f3"></span><span class="f2"></span>
+        </div>
+      </div>
+      <div class="visa-card__rows">
+        <div class="visa-card__row">
+          <div><div class="visa-card__row-label">Route</div><div class="visa-card__row-val">Appendix Global Talent</div></div>
+        </div>
+        <div class="visa-card__row">
+          <div><div class="visa-card__row-label">Endorsing Body</div><div class="visa-card__row-val">Arts Council England</div></div>
+          <div><div class="visa-card__row-label">Settlement</div><div class="visa-card__row-val">3–5 years</div></div>
+        </div>
+        <div class="visa-card__row">
+          <div><div class="visa-card__row-label">Disciplines</div><div class="visa-card__row-val">Product · UX/UI · Graphic · Industrial · Service · Digital</div></div>
+        </div>
+        <div class="visa-card__row">
+          <div><div class="visa-card__row-label">Employer Required</div><div class="visa-card__row-val">No</div></div>
+          <div><div class="visa-card__row-label">Min. Salary</div><div class="visa-card__row-val">None</div></div>
+        </div>
+      </div>
+      <span class="visa-card__badge">Live from 1 July 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT CHANGED -->
+<section id="what-changed" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · What Actually Changed</span>
+      <h2>Design finally has its own lane.</h2>
+      <p>For years, designers had to squeeze into Arts & Culture or Digital Technology categories built for completely different careers. That changes on 1 July 2026.</p>
+    </div>
+    <div class="pull-quote">Following the March 2026 Statement of Changes (HC 1691), a new Design Industry endorsement pathway has been added to Appendix Global Talent. Design now has its own lane, with its own evidence criteria, sitting inside the Global Talent route and assessed through Arts Council England.</div>
+    <div class="key-facts">
+      <div class="fact-card">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4"/><rect x="3" y="3" width="18" height="18" rx="3"/></svg></div>
+        <h4>Design-specific criteria</h4>
+        <p>Evidence requirements are now built around how achievement is actually recognised in product, graphic, UX, and industrial design — not retrofitted from arts or tech.</p>
+      </div>
+      <div class="fact-card">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg></div>
+        <h4>No job offer required</h4>
+        <p>You can apply without a sponsor, a job offer, or a minimum salary. Work employed, freelance, or start a business — all within your endorsed field.</p>
+      </div>
+      <div class="fact-card">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div>
+        <h4>Six disciplines covered</h4>
+        <p>Product & industrial design, graphic & brand design, UX/UI, digital product design, service design, and other applied design disciplines assessed against published criteria.</p>
+      </div>
+      <div class="fact-card">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+        <h4>ILR in 3–5 years</h4>
+        <p>Exceptional Talent track: Indefinite Leave to Remain available after 3 years. Exceptional Promise track: ILR after 5 years. Both lead to permanent settlement.</p>
+      </div>
+      <div class="fact-card">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>Fashion & architecture excluded</h4>
+        <p>Fashion design has its own existing route via British Fashion Council. Architecture also has a recognised route. If your practice overlaps, check which fits your evidence best.</p>
+      </div>
+      <div class="fact-card">
+        <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h4>Check GOV.UK before applying</h4>
+        <p>At the time of writing, the Home Office had not yet published every piece of detailed design pathway guidance. Always verify current requirements on GOV.UK on the day you apply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACKS -->
+<section id="tracks">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · Exceptional Talent vs Exceptional Promise</span>
+      <h2>Which track are you on?</h2>
+      <p>Every Global Talent application is assessed under one of two categories. Picking the wrong one wastes both time and money.</p>
+    </div>
+    <div class="track-tabs" role="tablist">
+      <button class="track-tab active" role="tab" data-tab="talent">Exceptional Talent</button>
+      <button class="track-tab" role="tab" data-tab="promise">Exceptional Promise</button>
+    </div>
+    <div class="track-panel active" id="panel-talent">
+      <div class="track-compare">
+        <div class="track-card">
+          <span class="track-badge talent">Exceptional Talent</span>
+          <div class="track-row"><span class="track-key">Who it's for</span><span class="track-val">Established professionals with a proven, recognised track record</span></div>
+          <div class="track-row"><span class="track-key">Track record</span><span class="track-val">Substantial track record in <strong>at least 2 countries</strong></span></div>
+          <div class="track-row"><span class="track-key">Settlement</span><span class="track-val">ILR available after <strong>3 years</strong></span></div>
+          <div class="track-row"><span class="track-key">Evidence weight</span><span class="track-val">Recognised achievement: major awards, press, international clients, leadership roles</span></div>
+          <div class="track-row"><span class="track-key">The ask</span><span class="track-val">Prove you have <strong>already arrived</strong> — not that you're on the way</span></div>
+        </div>
+        <div class="track-card" style="background:var(--ash-01);">
+          <h4 style="font-size:15px;margin-bottom:16px;color:var(--ink-secondary);">Quick self-check</h4>
+          <p style="font-size:14px;color:var(--ink-secondary);font-weight:300;margin-bottom:12px;">You may qualify for Exceptional Talent if you can answer yes to most of these:</p>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I have significant documented work across 2 or more countries</label>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I have won or been shortlisted for industry awards</label>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> My work has been published, exhibited, or distributed internationally</label>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I have held leadership positions within the design industry</label>
+          <label style="display:flex;gap:10px;font-size:14px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I have strong press coverage or third-party recognition outside my home country</label>
+        </div>
+      </div>
+    </div>
+    <div class="track-panel" id="panel-promise">
+      <div class="track-compare">
+        <div class="track-card">
+          <span class="track-badge promise">Exceptional Promise</span>
+          <div class="track-row"><span class="track-key">Who it's for</span><span class="track-val">Earlier-career professionals with a developing track record and clear leadership potential</span></div>
+          <div class="track-row"><span class="track-key">Track record</span><span class="track-val">Developing track record in <strong>1 or more countries</strong></span></div>
+          <div class="track-row"><span class="track-key">Settlement</span><span class="track-val">ILR available after <strong>5 years</strong></span></div>
+          <div class="track-row"><span class="track-key">Evidence weight</span><span class="track-val">Strong potential: early recognition, growth trajectory, credible endorsers who can speak to your direction</span></div>
+          <div class="track-row"><span class="track-key">The ask</span><span class="track-val">Prove you are <strong>clearly on the way</strong> — with evidence beyond paper potential</span></div>
+        </div>
+        <div class="track-card" style="background:var(--ash-01);">
+          <h4 style="font-size:15px;margin-bottom:16px;color:var(--ink-secondary);">Quick self-check</h4>
+          <p style="font-size:14px;color:var(--ink-secondary);font-weight:300;margin-bottom:12px;">Exceptional Promise may be your track if:</p>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I have strong, consistent design work but mostly within one country so far</label>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> My work has received early recognition (shortlists, local press, client testimonials)</label>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I can identify credible people in the design industry who will vouch for my trajectory</label>
+          <label style="display:flex;gap:10px;font-size:14px;margin-bottom:10px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I have 5 years of consistent professional engagement in design</label>
+          <label style="display:flex;gap:10px;font-size:14px;"><input type="checkbox" style="accent-color:var(--accent);margin-top:3px;"> I can't yet demonstrate a substantial two-country track record honestly</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE -->
+<section id="evidence" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · Evidence Required</span>
+      <h2>This is the part that actually decides your application.</h2>
+      <p>The panel does not meet you, does not interview you, and does not see your work in person. They read documents. Your evidence has to do all the talking.</p>
+    </div>
+    <div class="evidence-grid">
+      <div class="ev-card">
+        <h4>Core Documents</h4>
+        <label class="ev-item"><input type="checkbox"> A CV setting out your professional design career, written clearly and chronologically</label>
+        <label class="ev-item"><input type="checkbox"> 3 dated letters of recommendation</label>
+        <label class="ev-item"><input type="checkbox"> At least 2 letters from well-established design organisations you have worked with in a design capacity</label>
+        <label class="ev-item"><input type="checkbox"> A personal statement connecting your evidence to the specific criteria you are applying under</label>
+      </div>
+      <div class="ev-card">
+        <h4>Proof of Work & Reach</h4>
+        <label class="ev-item"><input type="checkbox"> Work that has been applied, published, distributed, or internationally exhibited</label>
+        <label class="ev-item"><input type="checkbox"> Evidence of regular professional engagement in design over the last 5 years</label>
+        <label class="ev-item"><input type="checkbox"> Evidence of recognised achievement (awards, shortlists, major clients, press) — for Exceptional Talent</label>
+        <label class="ev-item"><input type="checkbox"> Evidence of strong industry potential and momentum — for Exceptional Promise</label>
+      </div>
+      <div class="ev-card" style="background:var(--good-bg);border-color:color-mix(in srgb,var(--good) 20%,transparent);">
+        <h4 style="color:var(--good);">The Prestigious Prize Shortcut</h4>
+        <label class="ev-item"><input type="checkbox"> Check the current eligible prestigious prize list on GOV.UK</label>
+        <label class="ev-item"><input type="checkbox"> If your award is on the list, you may bypass endorsement entirely and apply straight to visa stage</label>
+        <label class="ev-item"><input type="checkbox"> No time limit on when the prize was won, provided it is still current and verifiable</label>
+        <label class="ev-item"><input type="checkbox"> The list was expanded in Oct 2025 and further updated through 2026 — always verify before assuming</label>
+      </div>
+      <div class="ev-card" style="background:var(--warn-bg);border-color:color-mix(in srgb,var(--warn) 20%,transparent);">
+        <h4 style="color:var(--warn);">The Mistake Most Applicants Make</h4>
+        <div style="font-size:14.5px;color:var(--ink-secondary);font-weight:300;line-height:1.65;">
+          <p style="margin-bottom:12px;">Treating a strong portfolio as self-evidently sufficient. It is not.</p>
+          <p>The strength of your case comes from <strong style="color:var(--ink-primary);">third-party validation</strong>: who is vouching for you, what they say specifically about your standing, and how well your documented achievements match the exact wording of the criteria.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · The Application Process</span>
+      <h2>Ten steps, in the right order.</h2>
+      <p>Rushing a Global Talent application almost always shows in the evidence. Give yourself real runway.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step-num-wrap"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-content"><h4>Confirm your track</h4><p>Decide honestly whether your evidence supports Exceptional Talent or Exceptional Promise. Choosing the wrong track wastes both time and money.</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-content"><h4>Audit and gather your evidence</h4><p>Pull together your CV, portfolio proof, press mentions, award records, and any documentation of client work, publication, or exhibition.</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">3</div><div class="step-line"></div></div><div class="step-content"><h4>Secure your letters of recommendation</h4><p>Approach recommenders early. Letters must be dated, specific, and at least two must come from well-established design organisations you have actually worked with.</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">4</div><div class="step-line"></div></div><div class="step-content"><h4>Write your personal statement</h4><p>Connect your evidence directly to the published criteria. Do not assume the panel will make the connection for you.</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">5</div><div class="step-line"></div></div><div class="step-content"><h4>Submit your endorsement application</h4><p>This goes to the relevant endorsing body under Appendix Global Talent, alongside the endorsement stage fee (~£524–£561).</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">6</div><div class="step-line"></div></div><div class="step-content"><h4>Wait for the endorsement decision</h4><p>Processing times vary. Build this waiting period into your overall plan, especially if you have a target move date.</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">7</div><div class="step-line"></div></div><div class="step-content"><h4>Apply for the visa itself</h4><p>Once endorsed, you apply for the visa using your endorsement letter, alongside the visa stage fee (~£205).</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">8</div><div class="step-line"></div></div><div class="step-content"><h4>Pay the Immigration Health Surcharge (IHS)</h4><p>Paid as part of your visa application and covers NHS access while in the UK. Currently £1,035 per person per year — paid upfront for the full visa length.</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">9</div><div class="step-line"></div></div><div class="step-content"><h4>Complete biometrics and required checks</h4><p>Book a biometric appointment. Where applicable, arrange an Electronic Travel Authorisation (ETA). TB test if required (see Nigeria/Africa chapter).</p></div></div>
+      <div class="step"><div class="step-num-wrap"><div class="step-num">10</div><div class="step-line"></div></div><div class="step-content"><h4>Receive your decision</h4><p>Once approved, your visa conditions confirm your track, your grant length, and your settlement timeline.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COST CALCULATOR -->
+<section id="costs" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Full Cost Breakdown</span>
+      <h2>Budget for the full picture, not just the headline fee.</h2>
+      <p>The £766 Home Office fee is only part of the real cost. Use the calculator to estimate your actual total.</p>
+    </div>
+    <div class="calc-shell">
+      <div class="calc-controls">
+        <div class="calc-field">
+          <label>Visa length (years)</label>
+          <select id="visaYears">
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3" selected>3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label>Number of people (you + dependants)</label>
+          <select id="numPeople">
+            <option value="1" selected>1 — just me</option>
+            <option value="2">2 — me + 1</option>
+            <option value="3">3 — me + 2</option>
+            <option value="4">4 — me + 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-breakdown">
+        <div class="calc-row"><span class="label">Endorsement stage fee</span><span class="val">~£561</span></div>
+        <div class="calc-row"><span class="label">Visa stage fee</span><span class="val">~£205</span></div>
+        <div class="calc-row"><span class="label" id="ihsLabel">Immigration Health Surcharge (IHS) — 3 yrs × 1 person</span><span class="val" id="ihsVal">£3,105</span></div>
+        <div class="calc-row"><span class="label">TB test (if required, Nigeria)</span><span class="val">~₦30k–₦100k</span></div>
+        <div class="calc-row"><span class="label">Certified translations (estimated)</span><span class="val">Variable</span></div>
+        <div class="calc-row"><span class="label">Electronic Travel Authorisation (ETA)</span><span class="val">Low cost</span></div>
+      </div>
+      <div class="calc-total">
+        <span class="label">Estimated minimum total (Home Office fees + IHS)</span>
+        <span class="val" id="calcTotal">£3,871</span>
+      </div>
+      <p class="calc-note">* This calculator uses approximate figures current at the time of writing. Confirm all current fees on GOV.UK before paying anything. From 26 March 2027 the English language requirement for settlement rises from B1 to B2 — factor this in if your ILR date falls close to that window.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">06 · Building Your Timeline</span>
+      <h2>Work backwards from your target date.</h2>
+      <p>Panels can tell the difference between a case built over months and one assembled in a weekend.</p>
+    </div>
+    <div class="timeline-grid">
+      <div class="tl-card">
+        <span class="tl-phase">3–6 Months Before Submission</span>
+        <h4>Evidence Gathering</h4>
+        <ul>
+          <li>Start pulling together CV, portfolio documentation, press mentions, and award records</li>
+          <li>Identify 3+ recommenders and approach them early</li>
+          <li>Audit which evidence categories you can actually evidence</li>
+        </ul>
+      </div>
+      <div class="tl-card">
+        <span class="tl-phase">3–4 Months Before Visa Application</span>
+        <h4>TB Testing (If Required)</h4>
+        <ul>
+          <li>Book at an approved Home Office clinic — not an unapproved one</li>
+          <li>Certificates are valid for 6 months from X-ray date</li>
+          <li>Abnormalities can add up to 8 weeks — test early</li>
+          <li>Children 10 and under need physical assessment only</li>
+        </ul>
+      </div>
+      <div class="tl-card">
+        <span class="tl-phase">Ongoing</span>
+        <h4>Translations & Letters</h4>
+        <ul>
+          <li>Send any non-English documents for certified translation</li>
+          <li>Strong, specific recommendation letters take time to write — don't rush your recommenders</li>
+          <li>Machine or family translation will not be accepted</li>
+        </ul>
+      </div>
+      <div class="tl-card">
+        <span class="tl-phase">Settlement Target: 26 March 2027</span>
+        <h4>English Language Note</h4>
+        <ul>
+          <li>From this date, settlement English requirement rises from B1 to B2</li>
+          <li>Introduced by March 2026 Statement of Changes (HC 1691)</li>
+          <li>If your ILR application will land close to this date, factor in early</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY APPLICATIONS FAIL -->
+<section id="refusals" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">07 · Why Applications Get Refused</span>
+      <h2>Design talent is rarely the reason a strong applicant gets refused.</h2>
+      <p>Presentation and evidence strategy are. Here is what tends to go wrong.</p>
+    </div>
+    <div class="refusal-list">
+      <div class="refusal-item"><div class="r-icon">!</div><div class="r-text"><h4>Portfolio strong, third-party validation missing</h4><p>A visually impressive portfolio with no external recognition of its significance. The panel needs to see that the design industry already recognises you — not just that you made beautiful work.</p></div></div>
+      <div class="refusal-item"><div class="r-icon">!</div><div class="r-text"><h4>Recommendation letters that can't carry weight</h4><p>Generic, unsigned, undated, or written by people who cannot credibly speak to your standing in the field. Recommenders must be from established design organisations you have actually worked with.</p></div></div>
+      <div class="refusal-item"><div class="r-icon">!</div><div class="r-text"><h4>Applying under the wrong track</h4><p>Most commonly: overreaching into Exceptional Talent without a genuinely substantial two-country track record. Choose honestly based on your actual evidence, not your ambition.</p></div></div>
+      <div class="refusal-item"><div class="r-icon">!</div><div class="r-text"><h4>Work shown, but not what it reached</h4><p>Evidence showing what you made but not that it was applied, published, distributed, or exhibited in a way the criteria recognise. Process work and unpublished concepts generally do not count.</p></div></div>
+      <div class="refusal-item"><div class="r-icon">!</div><div class="r-text"><h4>Gap in the 5-year engagement window</h4><p>Missing evidence of consistent professional engagement across the full last 5 years. A strong recent 2 years with gaps earlier can weaken an otherwise solid case.</p></div></div>
+      <div class="refusal-item"><div class="r-icon">!</div><div class="r-text"><h4>Administrative errors</h4><p>Immigration advisers report that admin errors — expired TB certificates, missing signatures, incomplete forms, wrong fee paid at the wrong stage — are now among the most common causes of refusal or delay. A strong case badly presented can lose to a moderate case presented well.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NIGERIA / AFRICA -->
+<section id="nigeria">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">08 · Nigeria & Africa: Dedicated Chapter</span>
+      <h2>If you are applying from Nigeria or building your case from Africa.</h2>
+      <p>There are specific practical and strategic points worth handling with extra care.</p>
+    </div>
+
+    <h3 style="font-size:20px;margin-bottom:20px;">TB Testing — Approved Clinics</h3>
+    <p style="font-size:15px;color:var(--ink-secondary);font-weight:300;margin-bottom:24px;max-width:740px;">If you have lived in Nigeria or Benin for 6 months or more within the last 6 months, and your visa grant will be for longer than 6 months, a TB test is generally required. Use only Home Office approved clinics. Unauthorised agents have been reported using fraudulent bank details — always confirm payment directly with the clinic.</p>
+    <div class="clinic-grid">
+      <div class="clinic-card"><span class="city">Lagos</span><h4>IOM Migration Health Assessment Centre</h4><p>Ikeja — the most widely referenced approved clinic for TB testing in Lagos</p></div>
+      <div class="clinic-card"><span class="city">Lagos</span><h4>St. Nicholas Hospital</h4><p>Lagos Island</p></div>
+      <div class="clinic-card"><span class="city">Lagos</span><h4>Q-Life Family Clinic</h4><p>Victoria Island</p></div>
+      <div class="clinic-card"><span class="city">Lagos</span><h4>The Consultants Practice</h4><p>Ikoyi</p></div>
+      <div class="clinic-card"><span class="city">Abuja</span><h4>IOM Migration Health Assessment Centre</h4><p>Asokoro — the approved clinic for applicants based in Abuja</p></div>
+      <div class="clinic-card" style="background:var(--warn-bg);border-color:color-mix(in srgb,var(--warn) 20%,transparent);"><span class="city" style="color:var(--warn);">Note — Benin</span><h4>No approved clinic in Benin</h4><p>Applicants based in Benin must travel into Nigeria to be tested. Verify the current approved clinic list on GOV.UK before booking — this list updates.</p></div>
+    </div>
+
+    <div style="margin-top:14px;padding:16px 20px;background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 20%,transparent);border-radius:12px;font-size:13.5px;color:var(--ink-secondary);font-weight:300;">
+      Applicants aged 11+ generally need a chest X-ray. Children 10 and under typically only need a physical assessment. If an X-ray shows an abnormality, additional sputum testing can add up to 8 weeks before a final result. Certificates are usually valid for 6 months from the X-ray date, or 3 months if you have had recent contact with someone diagnosed with active pulmonary TB.
+    </div>
+
+    <h3 style="font-size:20px;margin:44px 0 20px;">Demonstrating International Recognition from Africa</h3>
+    <p style="font-size:15px;color:var(--ink-secondary);font-weight:300;margin-bottom:24px;max-width:740px;">A UK-based panel may not automatically understand the scale or significance of recognition that would be obvious to anyone working in Lagos, Nairobi, or Accra. Do not assume the panel will fill in that context. Build it into your evidence.</p>
+    <div class="africa-tips">
+      <div class="africa-tip"><h4>Explain the scale of every award or platform</h4><p>State audience size, industry standing, or selection process where relevant. Don't name an award and move on — the panel may not recognise it.</p></div>
+      <div class="africa-tip"><h4>Quantify your reach wherever possible</h4><p>Client base, project scope, audience numbers, revenue influenced, or team size led. Numbers give the panel something concrete to weigh.</p></div>
+      <div class="africa-tip"><h4>Seek letters from internationally recognised bodies</h4><p>Where those relationships genuinely exist. Local letters are fine as part of the three, but at least two need to come from well-established design organisations.</p></div>
+      <div class="africa-tip"><h4>Explain pan-African association standing</h4><p>If your recognition comes from a regional design association or award, briefly explain its selection criteria and standing so the panel can weigh it accurately.</p></div>
+    </div>
+    <div class="pull-quote" style="margin-top:36px;">You are not just proving you did good work. You are proving, in terms a UK panel can verify and weigh, that the design industry already recognises you as a leader or a credible rising leader. Context does that work. Do not leave it out.</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faqs" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">09 · Frequently Asked Questions</span>
+      <h2>Quick answers, plain language.</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item"><div class="faq-q">Do I need a job offer to apply?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">No. This is one of the defining features of the Global Talent visa. You do not need a job offer, a sponsor, or a minimum salary threshold.</div></div></div>
+      <div class="faq-item"><div class="faq-q">Can I freelance or run my own business on this visa?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">Yes. You can work employed, self-employed, or freelance, and you can start a business — provided the work stays within your endorsed field.</div></div></div>
+      <div class="faq-item"><div class="faq-q">What if my work spans design and architecture or fashion?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">Check whether architecture's existing route or the British Fashion Council pathway fit your evidence better than the new Design Industry pathway. Apply under whichever category your strongest evidence actually supports.</div></div></div>
+      <div class="faq-item"><div class="faq-q">Is a prestigious design award enough on its own?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">It can be, if the award appears on the current eligible prestigious prize list — in which case you may be able to skip the endorsement stage entirely. If it is not on that list, you will still need to build a full endorsement case. Always check the current list on GOV.UK before assuming your award qualifies.</div></div></div>
+      <div class="faq-item"><div class="faq-q">How long does the whole process take?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">It varies by endorsing body workload and how prepared your evidence is when you submit. Building in months — not weeks — for evidence gathering and processing is the realistic expectation.</div></div></div>
+      <div class="faq-item"><div class="faq-q">Can family members join me?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">Global Talent visa holders can typically bring dependants, subject to separate eligibility and financial requirements for those applications. Use the cost calculator above to estimate IHS costs for your full household.</div></div></div>
+      <div class="faq-item"><div class="faq-q">Does this guide replace legal advice?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">No. This guide gives you structure and strategy based on publicly available information. Complex or borderline cases benefit from a qualified immigration adviser who can review your specific evidence. Always verify current requirements on GOV.UK before you submit anything or make any payment.</div></div></div>
+      <div class="faq-item"><div class="faq-q">What is the English language requirement for settlement?<svg class="faq-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">From 26 March 2027, the English language requirement for settlement on many work routes, including Global Talent, rises from CEFR level B1 to B2. This was introduced by the March 2026 Statement of Changes (HC 1691). If your settlement application will land close to that date, factor it in early.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRE-APPLICATION CHECKLIST -->
+<section id="checklist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">10 · Pre-Application Checklist</span>
+      <h2>All 12 items before you submit anything.</h2>
+      <p>Your progress is saved in this browser.</p>
+    </div>
+    <div class="pre-check-grid" id="preCheckGrid">
+      <div class="pre-check-card">
+        <h4>Track & Eligibility</h4>
+        <label class="pre-item"><input type="checkbox" data-key="pre0"> Decided honestly between Exceptional Talent and Exceptional Promise based on actual evidence</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre1"> Checked the current eligible prestigious prize list — in case endorsement can be bypassed</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre2"> Verified current design pathway guidance on GOV.UK (criteria were still being finalised at time of writing)</label>
+      </div>
+      <div class="pre-check-card">
+        <h4>Documents</h4>
+        <label class="pre-item"><input type="checkbox" data-key="pre3"> Up-to-date CV covering the full professional design career</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre4"> Evidence that work has been applied, published, distributed, or exhibited</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre5"> Evidence of regular professional engagement across the last 5 years</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre6"> Evidence of recognised achievement or strong potential, depending on track</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre7"> Personal statement directly connecting evidence to published criteria</label>
+      </div>
+      <div class="pre-check-card">
+        <h4>Recommendations</h4>
+        <label class="pre-item"><input type="checkbox" data-key="pre8"> Identified and approached at least 3 recommenders</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre9"> At least 2 recommenders are from well-established design organisations that I have worked with</label>
+      </div>
+      <div class="pre-check-card">
+        <h4>Logistics & Budget</h4>
+        <label class="pre-item"><input type="checkbox" data-key="pre10"> TB test booked at an approved clinic (if required) with enough lead time before certificate expiry</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre11"> Non-English documents sent for proper certified translation</label>
+        <label class="pre-item"><input type="checkbox" data-key="pre12"> Budgeted for the full cost picture — not just the headline endorsement fee</label>
+      </div>
+    </div>
+    <div class="checklist-meta" style="margin-top:28px;">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="preProgress" style="width:0%"></div></div>
+      <span class="progress-label" id="preLabel">0 / 13 complete</span>
+      <button class="reset-btn" id="resetChecklist">Reset</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER CTA -->
+<div class="footer-cta" id="build-cta">
+  <div class="wrap footer-cta__inner">
+    <span class="footer-cta__eyebrow">Halo drops it. We build it. You share it.</span>
+    <h2 class="footer-cta__headline">If you want a website that actually <span style="color:var(--accent-light)">scales</span>, built in days — we help.</h2>
+    <p class="footer-cta__sub">From one PDF to a fully interactive guide, live on the web. That's the BlindspotLab process: Discovery → Approach → Execution → Tracking → Optimization.</p>
+    <div class="footer-tiers"><span>Spark · 5 days</span><span>Ship · 10 days</span><span>Forge · 21 days</span><span>Care &amp; Evolve · ongoing</span></div>
+    <a class="btn btn-primary" href="mailto:hello@blindspotlab.xyz?subject=Let%27s%20build%20something%20that%20scales" target="_blank">Start a Build →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-credits">
+    <div class="wrap">
+      <div>
+        <span class="footer-col-label">Credits</span>
+        <p><strong style="color:#fff">All guide content</strong> was researched and written by <a href="https://x.com/halosznn_" target="_blank" rel="noopener">Halo (@halosznn_)</a> — Halo's Hiring Sheet. Content is drawn from publicly available information including GOV.UK publications and the March 2026 Statement of Changes (HC 1691). This site is a fully-credited interactive companion — not immigration advice and not affiliated with or endorsed by Halo unless stated otherwise.</p>
+        <p>Site design, build, and the "TalentLane" concept by <a href="https://x.com/tmojeeb" target="_blank" rel="noopener">Mojeeb Titilayo (@tmojeeb)</a> for <a href="https://blindspotlab.xyz" target="_blank" rel="noopener">BlindspotLab</a>.</p>
+        <p style="margin-top:10px;color:#6F707C;font-size:12px;">This guide is for general information only. It is not immigration advice. Always confirm current requirements on GOV.UK or with a qualified immigration adviser before you apply.</p>
+      </div>
+      <div>
+        <span class="footer-col-label">Original Creator</span>
+        <div class="footer-links">
+          <a href="https://x.com/halosznn_" target="_blank" rel="noopener">Halo on X — @halosznn_</a>
+          <a href="https://halos-job-board.vercel.app" target="_blank" rel="noopener">halos-job-board.vercel.app</a>
+        </div>
+      </div>
+      <div>
+        <span class="footer-col-label">Built By BlindspotLab</span>
+        <div class="footer-links">
+          <a href="https://blindspotlab.xyz" target="_blank" rel="noopener">blindspotlab.xyz</a>
+          <a href="https://mojeeb.xyz" target="_blank" rel="noopener">mojeeb.xyz</a>
+          <a href="https://x.com/tmojeeb" target="_blank" rel="noopener">@tmojeeb on X</a>
+          <a href="mailto:hello@blindspotlab.xyz">hello@blindspotlab.xyz</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>TalentLane — an unofficial interactive companion to Halo's UK Global Talent Visa: Design Pathway Guide.</span>
+      <span>© 2026 · Content © Halo (@halosznn_) · Build © BlindspotLab</span>
+    </div>
+  </div>
+</footer>
+
+<div class="copy-toast" id="toast">Copied</div>
+<div class="scroll-nav" id="scrollNav">
+  <button id="scrTop" aria-label="Scroll to top" title="Scroll to top">
+    <svg class="progress-ring" width="42" height="42" viewBox="0 0 42 42">
+      <circle class="track" cx="21" cy="21" r="19"></circle>
+      <circle class="fill" id="scrProgress" cx="21" cy="21" r="19" stroke-dasharray="119.4" stroke-dashoffset="119.4"></circle>
+    </svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+  <button id="scrBottom" aria-label="Scroll to bottom" title="Scroll to bottom">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+  </button>
+</div>
+
+<script>
+/* TRACK TABS */
+document.querySelectorAll('.track-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.track-tab').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.track-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+/* FAQ ACCORDION */
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.closest('.faq-item');
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+/* IHS CALCULATOR */
+function calcUpdate(){
+  const yrs=parseInt(document.getElementById('visaYears').value)||3;
+  const ppl=parseInt(document.getElementById('numPeople').value)||1;
+  const ihs=1035*yrs*ppl;
+  const total=561+205+ihs;
+  document.getElementById('ihsLabel').textContent='Immigration Health Surcharge (IHS) — '+yrs+' yr'+(yrs>1?'s':'')+' × '+ppl+' person'+(ppl>1?'s':'');
+  document.getElementById('ihsVal').textContent='£'+ihs.toLocaleString();
+  document.getElementById('calcTotal').textContent='£'+total.toLocaleString();
+}
+document.getElementById('visaYears').addEventListener('change',calcUpdate);
+document.getElementById('numPeople').addEventListener('change',calcUpdate);
+calcUpdate();
+
+/* CHECKLIST with localStorage */
+const KEYS=['pre0','pre1','pre2','pre3','pre4','pre5','pre6','pre7','pre8','pre9','pre10','pre11','pre12'];
+function saveCheck(){
+  const state={};
+  KEYS.forEach(k=>{ const el=document.querySelector('[data-key="'+k+'"]'); if(el) state[k]=el.checked; });
+  try{localStorage.setItem('talentlane_check',JSON.stringify(state));}catch(e){}
+  updateProgress();
+}
+function loadCheck(){
+  try{
+    const saved=JSON.parse(localStorage.getItem('talentlane_check')||'{}');
+    KEYS.forEach(k=>{
+      const el=document.querySelector('[data-key="'+k+'"]');
+      if(el && saved[k]){ el.checked=true; el.closest('.pre-item').classList.toggle('done',true); }
+    });
+  }catch(e){}
+  updateProgress();
+}
+function updateProgress(){
+  const total=KEYS.length;
+  const done=KEYS.filter(k=>{ const el=document.querySelector('[data-key="'+k+'"]'); return el && el.checked; }).length;
+  document.getElementById('preProgress').style.width=(done/total*100)+'%';
+  document.getElementById('preLabel').textContent=done+' / '+total+' complete';
+}
+document.querySelectorAll('[data-key]').forEach(el=>{
+  el.addEventListener('change',()=>{
+    el.closest('.pre-item').classList.toggle('done',el.checked);
+    saveCheck();
+  });
+});
+document.getElementById('resetChecklist').addEventListener('click',()=>{
+  KEYS.forEach(k=>{ const el=document.querySelector('[data-key="'+k+'"]'); if(el){ el.checked=false; el.closest('.pre-item').classList.remove('done'); } });
+  try{localStorage.removeItem('talentlane_check');}catch(e){}
+  updateProgress();
+});
+loadCheck();
+
+/* SCROLL NAV */
+(function(){
+  const top=document.getElementById('scrTop');
+  const bot=document.getElementById('scrBottom');
+  const ring=document.getElementById('scrProgress');
+  const C=119.4;
+  function upd(){
+    const st=window.scrollY||0;
+    const sh=document.documentElement.scrollHeight-window.innerHeight;
+    const pct=sh>0?st/sh:0;
+    top.classList.toggle('visible',st>420);
+    bot.classList.toggle('visible',sh-st>420);
+    ring.style.strokeDashoffset=C*(1-Math.min(Math.max(pct,0),1));
+  }
+  top.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  bot.addEventListener('click',()=>window.scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'}));
+  window.addEventListener('scroll',upd,{passive:true});
+  window.addEventListener('resize',upd);
+  upd();
+})();
+
+/* TOAST */
+function showToast(m){
+  const t=document.getElementById('toast');
+  t.textContent=m; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+}
+</script>
+</body>
+</html>
